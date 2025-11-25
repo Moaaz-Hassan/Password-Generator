@@ -1,0 +1,206 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header-font{
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: rgb(128, 124, 146);
+}
+.pig-font{
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color:rgb(231, 230, 235);
+}
+.medin-font{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color:rgb(231, 230, 235);
+}
+.smal-font{
+    font-size:18px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: rgb(35, 34, 42);
+}
+
+
+
+.bg-gry{
+    background-color: rgb(35, 34, 42);
+}
+.bg-black{
+    background-color: rgb(16, 15, 21);
+    padding: 20px;
+    height: 80px;
+}
+
+.flex-inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+.pointer-cursor{
+    cursor: pointer;
+}
+.degre{
+    width: 15px;
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(163, 255, 174);
+    margin-left: 5px;
+}
+.Strong{
+    background-color:rgb(163, 255, 174);
+    border-color: rgb(163, 255, 174);
+}
+.Medium{
+    background-color:rgb(248, 203, 99) ;
+    border-color: rgb(248, 203, 99) ;
+}
+
+.Weak{
+    background-color:rgb(251, 122, 86) ;
+    border-color: rgb(251, 122, 86) ;
+}
+
+.tooWeak{
+    background-color:red ;
+    border-color: red ;
+}
+
+.copy-container {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-container.done-copy::after {
+    content: "COPIED";
+    color: rgb(163, 255, 174);
+    font-size:18px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+.copy-container.done-copy.hide::after {
+    opacity: 0;
+}
+
+main{
+    width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+}
+header{
+    padding: 10px 30px;
+    width: 100%;
+    height: 80px;
+}
+.main-countent{
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.range{
+    width: 100%;
+    accent-color: rgb(163, 255, 174);
+}
+.selct-types div{
+    width: 100%;
+    margin-top: 5px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff; 
+    cursor: pointer;
+    background: transparent; 
+    
+}
+
+input[type="checkbox"]:checked {
+    background: rgb(163, 255, 174);
+    border-color: rgb(163, 255, 174);
+}
+
+button{
+    background-color: transparent;
+    height: 60px;
+    border-color: rgb(163, 255, 174);
+    background-color: rgb(163, 255, 174); 
+}
+button:hover{
+    background-color: transparent; 
+    color:rgb(163, 255, 174) ;
+}
+
+
+@media (max-width : 550px) {
+    main{
+        width: 95%;
+    }
+    .copy-container.done-copy::after {
+        font-size:15px ;
+        top: -20px;
+        left:50% ;
+        transform: translateX(-50%);
+    }
+    .pig-font{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .medin-font{
+        font-size: 21px;
+        font-weight: 350;
+    
+    }
+    .smal-font{
+        font-size:15px ;
+        font-weight: 350;
+    
+    }
+    .header-font{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .degre{
+        width: 10px;
+        height: 20px;
+        border-width: 1px;
+    }
+    .bg-black{
+        padding: 10px;
+        height: 70px;
+    }
+    header , .main-countent{
+        padding:  20px 15px;
+    }
+}
+
+

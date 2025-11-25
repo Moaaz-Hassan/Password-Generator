@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Password Generator</title>
+</head>
+<body class="bg-black">
+    <main>
+        <h1 class="header-font">Password Generator</h1>
+        <header class="flex-inline bg-gry"><p class="header-font the-password">P4$5W0rD!</p> <div class="copy-container pointer-cursor"><img class="iconcopy" src="./icon-viduo/icon-copy.svg" ></div></header>
+        <div class="main-countent bg-gry">
+            <div class="flex-inline"><p class="medin-font">Character Length</p> <p class="pig-font number-of-letters" style="color: rgb(163, 255, 174);">10</p></div>
+            <input class="range pointer-cursor" type="range" id="lengthRange" min="1" max="20" value="10">
+
+            <div class="selct-types">
+                <div class="flex-start"><input class="pointer-cursor Uppercase" type="checkbox" value="Uppercase"><p class="medin-font">Include Uppercase Letters</p> </div>
+                <div class="flex-start"><input class="pointer-cursor Lowercase" type="checkbox" value="Lowercase"><p class="medin-font">Include Lowercase Letters</p> </div>
+                <div class="flex-start"><input class="pointer-cursor Numbers" type="checkbox" value="Numbers"><p class="medin-font">Include Numbers</p> </div>
+                <div class="flex-start"><input class="pointer-cursor Symbols" type="checkbox" value="Symbols"><p class="medin-font">Include Symbols</p> </div>
+            </div>
+            <div class="flex-inline bg-black">
+                <p class="header-font" >STRENGTH</p>
+                <div class="flex-inline">
+                    <p class="medin-font Password-Strength"></p>
+                    <div class="flex-inline">
+                        <div class="degre d1"></div>
+                        <div class="degre d2"></div>
+                        <div class="degre d3"></div>
+                        <div class="degre d4"></div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="smal-font pointer-cursor  generat">GENERAT</button>
+
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
