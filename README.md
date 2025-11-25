@@ -12,7 +12,7 @@ This project is a **Password Generator Web App** that helps users create strong 
 ## Design / Demo Link
 
 Check out the live design or demo of the project here:  
-[View Project Design](https://your-demo-link.com)
+[View Project Design](https://moaaz-hassan.github.io/Password-Generator/)
 
 
 - **MacBook Preview :**  
